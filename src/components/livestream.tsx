@@ -3,6 +3,10 @@ import {loadChatUi} from 'chatkitty';
 
 const Livestream = () => {
     useEffect(() => {
+        const container = document.getElementById("chat-ui");
+
+        if (container && container.hasChildNodes()) return // Chat UI has already been loaded
+
        loadChatUi({
             widgetId: 'TAXqsiNOIYIhfadh',
             username: 'jane@user',
