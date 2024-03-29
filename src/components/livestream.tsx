@@ -20,7 +20,7 @@ const Livestream = () => {
         }, {
             $environment: {
                 mode: 'sandbox',
-                origin: 'http://localhost:9002',
+                origin: 'https://ui.staging.chatkitty.com',
                 environment: 'staging'
             }
         });
