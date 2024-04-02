@@ -1,6 +1,6 @@
 # ChatKitty Chat UI React Example
 
-[This is an example](https://chatkitty-chat-ui-react-example.vercel.app/) project that demonstrates how to integrate ChatKitty's Chat UI with a React application. ChatKitty provides a fully-featured chat interface out-of-the-box, and this project aims to make the integration with React as seamless as possible.
+[This is an example](https://chatkitty-chat-ui-react-demo.vercel.app/) project that demonstrates how to integrate ChatKitty's Chat UI with a React application. ChatKitty provides a fully-featured chat interface out-of-the-box, and this project aims to make the integration with React as seamless as possible.
 
 ## Features
 
