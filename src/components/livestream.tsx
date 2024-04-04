@@ -19,6 +19,41 @@ const Livestream = () => {
                 name: 'event',
                 event: '41267743-rick-astley-at-sse-arena-belfast'
             },
+            templates: {
+                elements: {
+                    message: {
+                        template: `
+     <div class="flex flex-col items-start">
+        <div class="$(#container) max-w-4/5 px-3 py-2 rounded-lg mb-2 text-sm leading-5">
+          <div class="font-semibold">$(user.display_name)</div>
+          <span>$(message.body)</span>
+          <div class="text-xs opacity-75 mt-1 text-right">$(message.time)</div>
+        </div>
+     </div>
+    `,
+                        classMaps: {
+                            container: {
+                                'bg-blue-100': '$inbound',
+                                'text-blue-900': '$inbound',
+                                'bg-pink-100': '$outbound',
+                                'text-green-900': '$outbound'
+                            }
+                        }
+                    }
+                }
+            },
+            styles: {
+                overrides: {
+                    message: {
+                        inbound: {
+                            "background-color": '#add8e6'
+                        },
+                        outbound: {
+                            "background-color": '#90EE90'
+                        }
+                    }
+                }
+            },
             components: {
                 chat: (context) => ({
                     onMounted: () => {
